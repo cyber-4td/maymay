@@ -1,0 +1,8 @@
+{
+  "interstitial": true,
+  "interstitialMinIntervalNew": 20000,
+  "interstitialMinIntervalOld": 60000,
+  "interstitialOld": true,
+  "interstitialStartLimitNew": 62000,
+  "interstitialStartLimitOld": 60001
+}

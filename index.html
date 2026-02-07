@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Jump Jump - 跳一跳</title>
+  <style>
+    * { margin: 0; padding: 0; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      touch-action: none;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    #gameCanvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+    #loading {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: #2c3e50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    #loading h1 { font-size: 28px; margin-bottom: 20px; }
+    #loading p { font-size: 14px; color: #95a5a6; }
+    #loading .bar {
+      width: 200px; height: 4px;
+      background: #34495e;
+      border-radius: 2px;
+      margin-top: 15px;
+      overflow: hidden;
+    }
+    #loading .bar-fill {
+      width: 0%; height: 100%;
+      background: #3498db;
+      border-radius: 2px;
+      transition: width 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="loading">
+    <h1>跳一跳</h1>
+    <p>Loading...</p>
+    <div class="bar"><div class="bar-fill" id="loadBar"></div></div>
+  </div>
+
+  <!-- 0. Clear corrupted localStorage from previous attempts -->
+  <script>
+    try {
+      var keysToRemove = [];
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i);
+        if (k && k.startsWith("wx_")) keysToRemove.push(k);
+      }
+      keysToRemove.forEach(function(k) { localStorage.removeItem(k); });
+    } catch(e) {}
+  </script>
+
+  <!-- 1. WeChat API Shim (must be first) -->
+  <script src="wx-shim.js"></script>
+  <script>
+    document.getElementById("loadBar").style.width = "10%";
+  </script>
+
+  <!-- 2. Libraries -->
+  <script src="libs/md5.js"></script>
+  <script src="libs/seedrandom.js"></script>
+  <script src="libs/Tween.js"></script>
+  <script>
+    document.getElementById("loadBar").style.width = "30%";
+  </script>
+
+  <script src="libs/three.js"></script>
+  <script>
+    document.getElementById("loadBar").style.width = "50%";
+  </script>
+
+  <script src="libs/OBJLoader.js"></script>
+  <script src="libs/MTLLoader.js"></script>
+  <script src="libs/pixi.js"></script>
+  <script>
+    document.getElementById("loadBar").style.width = "70%";
+  </script>
+
+  <script src="libs/SPE.js"></script>
+  <script>
+    // Ensure globals are set
+    // seedrandom exports to Math.seedrandom, not window.seedrandom
+    window.seedrandom = window.seedrandom || Math.seedrandom;
+    window.DEVELOP = false;
+    window.DEBUG = false;
+
+    document.getElementById("loadBar").style.width = "80%";
+  </script>
+
+  <!-- 2.5 Audio test + cheat helper -->
+  <script>
+    // Force cheat: after game loads, override user data
+    window._applyCheat = function() {
+      if (typeof uC !== "undefined" && uC) {
+        uC.gold = 999999;
+        uC.coin = 999999;
+        uC.ticket = 999;
+        console.log("[CHEAT] Applied: gold=" + uC.gold + " coin=" + uC.coin);
+      }
+    };
+  </script>
+
+  <!-- 3. Main game -->
+  <script>
+    // Setup canvas size before game loads
+    var c = document.getElementById("gameCanvas");
+    c.width = window.innerWidth * (window.devicePixelRatio || 2);
+    c.height = window.innerHeight * (window.devicePixelRatio || 2);
+    c.style.width = window.innerWidth + "px";
+    c.style.height = window.innerHeight + "px";
+
+    // Add toTempFilePathSync to main canvas
+    c.toTempFilePathSync = function(opt) {
+      return c.toDataURL();
+    };
+
+    document.getElementById("loadBar").style.width = "90%";
+  </script>
+  <script src="jump.js"></script>
+  <script>
+    // Hide loading screen after a delay
+    setTimeout(function() {
+      var el = document.getElementById("loading");
+      if (el) {
+        el.style.transition = "opacity 0.5s";
+        el.style.opacity = "0";
+        setTimeout(function() { el.style.display = "none"; }, 500);
+      }
+    }, 2000);
+
+    // Fire onShow to start the game
+    setTimeout(function() {
+      if (wx && wx._fireShow) wx._fireShow();
+    }, 500);
+
+    // Apply cheat after game fully loads
+    setTimeout(function() {
+      if (window._applyCheat) window._applyCheat();
+    }, 5000);
+    setTimeout(function() {
+      if (window._applyCheat) window._applyCheat();
+    }, 10000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+(require("libs/weapp-adapter"),
+  (window.md5 = require("libs/md5")),
+  (window.seedrandom = require("libs/seedrandom")),
+  (window.TWEEN = require("libs/Tween")),
+  (window.THREE = require("libs/three")),
+  require("libs/OBJLoader"),
+  require("libs/MTLLoader"),
+  (window.PIXI = require("libs/pixi")),
+  (window.SPE = require("libs/SPE")),
+  (window.DEVELOP = true),
+  (window.DEBUG = true),
+  require("./jump"));

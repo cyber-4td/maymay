@@ -1,0 +1,88 @@
+{
+  "2": [
+    {
+      "appCode": "",
+      "appId": "wxcfd3df0bae31a3ba",
+      "icon": "https://img.i51game.com/games/icon_crowd3.png",
+      "name": "人气大作战",
+      "path": "",
+      "weight": 100
+    },
+    {
+      "appCode": "",
+      "appId": "wxd0cdbe16c4683d49",
+      "icon": "https://cdn.i51game.com/bygame/games/icon_bridge.png",
+      "name": "板子英雄",
+      "path": "",
+      "weight": 120
+    },
+    {
+      "appCode": "",
+      "appId": "wx431fc505500a986b",
+      "icon": "https://img.i51game.com/games/icon_throw.png",
+      "name": "投掷英雄",
+      "path": "",
+      "weight": 100
+    },
+    {
+      "appCode": "",
+      "appId": "wxb370846de024d33a",
+      "icon": "https://cdn.i51game.com/bygame/games/icon_kick.png",
+      "name": "天天打木偶",
+      "path": "",
+      "weight": 100
+    },
+    {
+      "appCode": "",
+      "appId": "wx3f997d7bc483a96d",
+      "icon": "https://cdn.i51game.com/bygame/games/icon_pingpong.png",
+      "name": "乒乓吧同学",
+      "path": "",
+      "weight": 40
+    },
+    {
+      "appCode": "",
+      "appId": "wx1b61f4605c6860d3",
+      "icon": "https://cdn.i51game.com/bygame/games/icon_sausage.png",
+      "name": "香肠英雄",
+      "path": "",
+      "weight": 40
+    },
+    {
+      "appCode": "",
+      "appId": "wxf24210b3770da1a9",
+      "icon": "https://cdn.i51game.com/bygame/games/icon_curling.png",
+      "name": "冰上大作战",
+      "path": "",
+      "weight": 50
+    },
+    {
+      "appCode": "",
+      "appId": "wx4fa58b057b7a2e13",
+      "icon": "https://cdn.i51game.com/bygame/games/icon_slidesio.png",
+      "name": "水上大作战",
+      "weight": 100
+    },
+    {
+      "appCode": "",
+      "appId": "wxf2c0ca62750619db",
+      "icon": "https://img.i51game.com/games/icon_ball2048.png",
+      "name": "2048合球球",
+      "weight": 100
+    },
+    {
+      "appCode": "",
+      "appId": "wxc2f9f01f064f5166",
+      "icon": "https://img.i51game.com/games/icon_survivor",
+      "name": "末日突击",
+      "weight": 100
+    },
+    {
+      "appCode": "",
+      "appId": "wx49e58ddd399bfdff",
+      "icon": "https://img.i51game.com/games/icon_blossom",
+      "name": "花儿消消消",
+      "weight": 200
+    }
+  ]
+}

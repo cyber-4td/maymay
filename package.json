@@ -1,0 +1,10 @@
+{
+  "name": "jump-jump-web",
+  "version": "1.0.0",
+  "description": "WeChat Jump Jump game running on web browser",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "dev": "npx http-server -p 8080 -c-1",
+    "serve": "npx serve -l 8080"
+  }
+}

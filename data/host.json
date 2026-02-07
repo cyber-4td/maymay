@@ -1,0 +1,126 @@
+{
+    "api": "api",
+    "videoAd": 0,
+    "interstitialAd": 0,
+    "sharePercents": [
+        {
+            "time": [
+                0,
+                24
+            ],
+            "percent": 50
+        }
+    ],
+    "forceVideoRevive": 0,
+    "coinShareTime": 15,
+    "coinEnable": 1,
+    "showCustomer": 1,
+    "linkTicket": 1,
+    "showInvite": 1,
+    "packetEnable": 1,
+    "packetTime": 3600,
+    "packetScore": 100,
+    "gameRate": 1,
+    "showGroupText": 1,
+    "gamesBanner": false,
+    "gamesPanel": false,
+    "gamesIcon": true,
+    "navigateBack": 1,
+    "signPopUp": false,
+    "trySkin": false,
+    "skinVideoDuration": 60,
+    "shareFriendGift": false,
+    "shareFriendPercent": 0,
+    "limitGift": false,
+    "limitGiftMissShowTime": 129600,
+    "bannerAdNew": true,
+    "challengeMode": false,
+    "team": false,
+    "wxChallengeScore": 500,
+    "autoCreateChallengeCount": 3,
+    "wxChallengeScoreKey": "challengeScoreA",
+    "wxChallengeRewardScoreKey": "challengeScoreB",
+    "version-1697098221": {
+        "maxExpertId": 280,
+        "noticeId": 307
+    },
+    "version-1752824305": {
+        "version": "1754040830",
+        "maxExpertId": 369,
+        "noticeId": 396,
+        "updateImage": "share1779.png",
+        "updateDesc": "『欢乐球球』新关卡！怎得如此不留情面！"
+    },
+    "version-1754040830": {
+        "version": "1767581699",
+        "maxExpertId": 391,
+        "noticeId": 418,
+        "updateImage": "share1823.png",
+        "updateDesc": "『欢乐球球』新关卡！后退还是得果断，否则…"
+    },
+    "version-1767581699": {
+        "version": "1769166254",
+        "maxExpertId": 394,
+        "noticeId": 421,
+        "updateImage": "share1829.png",
+        "updateDesc": "『欢乐球球』新关卡！突生变故，必有玄机！"
+    },
+    "version-1769158435": {
+        "version": "1769166254",
+        "maxExpertId": 394,
+        "noticeId": 421,
+        "updateImage": "share1829.png",
+        "updateDesc": "『欢乐球球』新关卡！突生变故，必有玄机！"
+    },
+    "version-1769426930": {
+        "version": "1769426930",
+        "maxExpertId": 394,
+        "noticeId": 421,
+        "updateImage": "share1829.png",
+        "updateDesc": "『欢乐球球』新关卡！突生变故，必有玄机！"
+    },
+    "version-1769508891": {
+        "version": "1770367106",
+        "maxExpertId": 395,
+        "noticeId": 422,
+        "updateImage": "share1833.png",
+        "updateDesc": "『欢乐球球』新关卡！忙中出错，越慌越乱！",
+        "expertOpenList": [
+            {
+                "openTime": "2026-02-06T19:30:00+08:00",
+                "mapId": 396,
+                "noticeId": 423
+            }
+        ]
+    },
+    "version-1769759192": {
+        "api": "api",
+        "version": "1770367106",
+        "maxExpertId": 395,
+        "noticeId": 422,
+        "updateImage": "share1833.png",
+        "updateDesc": "『欢乐球球』新关卡！忙中出错，越慌越乱！",
+        "expertOpenList": [
+            {
+                "openTime": "2026-02-06T19:30:00+08:00",
+                "mapId": 396,
+                "noticeId": 423
+            }
+        ]
+    },
+    "version-1770367106": {
+        "api": "api",
+        "version": "1770367106",
+        "maxExpertId": 395,
+        "noticeId": 422,
+        "updateImage": "share1833.png",
+        "updateDesc": "『欢乐球球』新关卡！忙中出错，越慌越乱！",
+        "expertOpenList": [
+            {
+                "openTime": "2026-02-06T19:30:00+08:00",
+                "mapId": 396,
+                "noticeId": 423
+            }
+        ]
+    }
+}
